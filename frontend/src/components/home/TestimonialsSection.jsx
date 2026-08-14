@@ -33,8 +33,8 @@ export default function TestimonialsSection() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="section-subtitle mb-3">★ ★ ★ Stories of Change ★ ★ ★</p>
-          <h2 className="section-title">What People Are Saying</h2>
+          <p className="section-subtitle mb-3">★ ★ ★ Impact &amp; Community ★ ★ ★</p>
+          <h2 className="section-title">Stories of Change</h2>
           <div className="w-16 h-1 bg-crimson-500 mx-auto mt-4" />
         </div>
 

@@ -1,8 +1,15 @@
 import Layout from '../components/layout/Layout';
 import { useEffect, useState } from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, Users, HeartHandshake, Mic2, Users2 } from 'lucide-react';
 import { testimonialAPI } from '../services/api';
 import Reveal from '../components/common/Reveal';
+
+const impactAreas = [
+  { icon: Users, title: 'Youth Work', desc: 'Mentoring young people toward character, confidence, and purpose.' },
+  { icon: HeartHandshake, title: 'Veteran Outreach', desc: 'Peer-based support for veterans navigating transition and purpose.' },
+  { icon: Users2, title: 'Community Partnerships', desc: 'Working alongside schools, churches, and local organizations.' },
+  { icon: Mic2, title: 'Events & Workshops', desc: 'Speaking engagements and workshops that bring mentorship to the community.' },
+];
 
 const fallback = [
   { _id: 1, name: 'Youth Mentee', role: 'Youth Program', rating: 5, quote: 'Grit to Grace changed my life. They believed in me when I didn\'t believe in myself and helped me take the right steps forward.' },
@@ -28,14 +35,45 @@ export default function TestimonialsPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-navy-800/50" />
         <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-crimson-500" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-          <p className="text-crimson-400 font-heading text-xs uppercase tracking-widest mb-3">Stories of Change</p>
-          <h1 className="font-heading text-white text-5xl md:text-6xl font-bold uppercase">Testimonials</h1>
+          <p className="text-crimson-400 font-heading text-xs uppercase tracking-widest mb-3">Testimonials &amp; Community</p>
+          <h1 className="font-heading text-white text-5xl md:text-6xl font-bold uppercase">Impact &amp; Community</h1>
           <div className="w-16 h-1 bg-crimson-500 mx-auto mt-4" />
         </div>
       </div>
 
+      {/* Impact areas */}
+      <Reveal as="section" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="section-subtitle mb-3">★ ★ ★ How We Show Up ★ ★ ★</p>
+            <h2 className="section-title">Making an Impact Together</h2>
+            <div className="w-16 h-1 bg-crimson-500 mx-auto mt-4" />
+            <p className="text-gray-500 max-w-2xl mx-auto mt-6 leading-relaxed">
+              Grit to Grace Mentorship LLC is more than one-on-one mentorship — we are active in the community through partnerships, youth work, veteran outreach, and events that bring people together.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {impactAreas.map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="card p-6 text-center group">
+                <div className="bg-crimson-500/10 w-14 h-14 mx-auto flex items-center justify-center mb-4 group-hover:bg-crimson-500 transition-colors duration-300">
+                  <Icon size={24} className="text-crimson-500 group-hover:text-white transition-colors duration-300" />
+                </div>
+                <h3 className="font-heading font-bold text-navy-700 uppercase tracking-wide text-sm mb-2">{title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
+
+      {/* Testimonials */}
       <Reveal as="section" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="section-subtitle mb-3">★ ★ ★ Stories of Change ★ ★ ★</p>
+            <h2 className="section-title">What People Are Saying</h2>
+            <div className="w-16 h-1 bg-crimson-500 mx-auto mt-4" />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((t) => (
               <div key={t._id} className="card p-8 relative">

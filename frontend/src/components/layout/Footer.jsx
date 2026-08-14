@@ -39,7 +39,7 @@ export default function Footer() {
               { to: '/about', label: 'About Us' },
               { to: '/services', label: 'Our Services' },
               { to: '/pricing', label: 'Pricing' },
-              { to: '/testimonials', label: 'Testimonials' },
+              { to: '/testimonials', label: 'Impact & Community' },
               { to: '/contact', label: 'Contact' },
             ].map(link => (
               <li key={link.to}>
@@ -103,6 +103,16 @@ export default function Footer() {
           <div className="mt-6 pt-6 border-t border-white/10">
             <p className="text-white/40 text-xs">Payment plans available for all mentorship packages.</p>
           </div>
+        </div>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="border-t border-white/10 py-6 px-4">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-white/30 text-xs leading-relaxed text-center max-w-4xl mx-auto">
+            Grit to Grace Mentorship LLC provides mentorship, guidance, accountability, and resource navigation.
+            Mentorship services are not a substitute for licensed mental health counseling, medical care, legal services, or emergency/crisis services.
+          </p>
         </div>
       </div>
 
