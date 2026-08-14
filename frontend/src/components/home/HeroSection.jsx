@@ -16,14 +16,17 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-white">
+    <section className="relative min-h-screen flex flex-col justify-start lg:justify-center overflow-hidden bg-white">
       {/* Background image (parallax) */}
       <div ref={parallaxRef} className="absolute inset-0 scale-110">
-        <img
-          src="/hero.png"
-          alt="Two people climbing a mountain - one helping the other"
-          className="w-full h-full object-cover object-center"
-        />
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/mobile-hero.png" />
+          <img
+            src="/hero.png"
+            alt="Two people climbing a mountain - one helping the other"
+            className="w-full h-full object-cover object-center"
+          />
+        </picture>
       </div>
 
       {/* White gradient overlay so left-side text stays readable, right side stays clear */}
@@ -34,7 +37,7 @@ export default function HeroSection() {
         style={{ backgroundImage: "url('/images/flag-bg.png')" }} />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-12 py-16 lg:py-24">
+      <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-12 pt-8 pb-16 lg:py-24">
         {/* Text */}
         <div className="max-w-2xl text-left">
           {/* Badge */}
