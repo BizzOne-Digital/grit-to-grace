@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    color: #1a1a2e;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    letter-spacing: 0.03em;
+  }
+  h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-crimson-500 hover:bg-crimson-600 text-white font-heading font-semibold tracking-wider uppercase px-8 py-3 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white font-heading font-semibold tracking-wider uppercase px-8 py-3 transition-all duration-300 hover:bg-white hover:text-navy-800;
+  }
+  .btn-navy {
+    @apply bg-navy-700 hover:bg-navy-800 text-white font-heading font-semibold tracking-wider uppercase px-8 py-3 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .section-title {
+    @apply text-navy-700 font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide;
+  }
+  .section-subtitle {
+    @apply text-crimson-500 font-heading text-sm uppercase tracking-widest font-semibold;
+  }
+  .font-script {
+    font-style: italic;
+  }
+  .card {
+    @apply bg-white rounded-none shadow-md border-t-4 border-crimson-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #C8102E; border-radius: 3px; }
+
+/* Star rating */
+.star-filled { color: #f5c842; }
+.star-empty { color: #d1d5db; }
+
+/* Swiper custom */
+.swiper-pagination-bullet-active { background: #C8102E !important; }
+.swiper-button-next, .swiper-button-prev { color: #C8102E !important; }
