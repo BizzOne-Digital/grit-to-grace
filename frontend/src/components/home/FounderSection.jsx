@@ -11,7 +11,7 @@ export default function FounderSection() {
           <div className="relative order-2 lg:order-1">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-crimson-500" />
             <img
-              src="/about.png"
+              src="/personimg.png"
               alt="David Arenas - Founder of Grit to Grace Mentorship"
               className="relative z-10 w-full h-80 lg:h-[420px] object-cover object-top"
             />

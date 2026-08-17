@@ -48,7 +48,7 @@ export default function AboutPage() {
           </div>
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-navy-200" />
-            <img src="/about.png"
+            <img src="/personimg.png"
               alt="David Arenas - Founder" className="relative z-10 w-full h-96 object-cover object-top" />
             <div className="absolute bottom-4 left-4 bg-crimson-500 text-white px-6 py-4 z-20">
               <p className="font-heading font-bold uppercase">David Arenas</p>
