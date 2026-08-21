@@ -32,7 +32,7 @@ export default function AboutPage() {
       <Reveal as="section" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="section-subtitle mb-3">Our Founder &amp; Lead Mentor</p>
+            <p className="section-subtitle mb-3">Founder &amp; Lead Mentor</p>
             <h2 className="section-title mb-6">David Arenas</h2>
             <div className="w-16 h-1 bg-crimson-500 mb-6" />
             <div className="space-y-4 text-gray-600 leading-relaxed">
