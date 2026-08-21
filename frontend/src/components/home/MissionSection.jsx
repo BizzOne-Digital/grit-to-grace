@@ -17,7 +17,7 @@ export default function MissionSection() {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-crimson-500" />
             <img
-              src="/our.png"
+              src="/camp.png"
               alt="Community mentorship"
               className="relative z-10 w-full h-80 lg:h-[480px] object-cover"
             />
