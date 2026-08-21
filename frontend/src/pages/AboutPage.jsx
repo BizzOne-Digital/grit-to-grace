@@ -17,7 +17,7 @@ export default function AboutPage() {
       {/* Page Header */}
       <div className="relative py-24 bg-navy-800 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&q=70" alt="" className="w-full h-full object-cover" />
+          <img src="/our.png" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-navy-800/50" />
         <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-crimson-500" />

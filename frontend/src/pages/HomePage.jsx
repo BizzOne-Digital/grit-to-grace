@@ -15,11 +15,11 @@ export default function HomePage() {
       <HeroSection />
       <WhoWeServeSection />
       <MissionSection />
+      <ServicesSection />
       <FounderSection />
       <FaithSection />
-      <ServicesSection />
-      <PricingSection />
       <TestimonialsSection />
+      <PricingSection />
       <CTASection />
     </Layout>
   );

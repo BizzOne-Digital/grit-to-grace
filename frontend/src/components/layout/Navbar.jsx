@@ -4,10 +4,10 @@ import { Menu, X, Phone, Mail } from 'lucide-react';
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/about', label: 'Our Founder' },
   { to: '/services', label: 'Services' },
-  { to: '/pricing', label: 'Pricing' },
   { to: '/testimonials', label: 'Impact & Community' },
+  { to: '/pricing', label: 'Pricing' },
+  { to: '/about', label: 'Our Founder' },
   { to: '/contact', label: 'Contact' },
 ];
 
