@@ -11,13 +11,13 @@ export default function FounderSection() {
           <div className="relative order-2 lg:order-1">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-crimson-500" />
             <img
-              src="/personimg.png"
-              alt="David Arenas - Founder of Grit to Grace Mentorship"
-              className="relative z-10 w-full h-80 lg:h-[420px] object-cover object-top"
+              src="/newimg.png"
+              alt="Grit to Grace Mentorship - walking alongside you"
+              className="relative z-10 w-full h-80 lg:h-[420px] object-cover"
             />
             <div className="absolute bottom-4 right-4 bg-navy-800 text-white px-6 py-4 z-20">
-              <p className="font-heading font-bold uppercase">David Arenas</p>
-              <p className="text-white/60 text-sm">Founder & Lead Mentor</p>
+              <p className="font-heading font-bold uppercase">Grit to Grace</p>
+              <p className="text-white/60 text-sm">Walking alongside you</p>
             </div>
           </div>
 

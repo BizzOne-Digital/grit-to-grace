@@ -21,7 +21,7 @@ export default function MissionSection() {
               alt="Community mentorship"
               className="relative z-10 w-full h-80 lg:h-[480px] object-cover"
             />
-            <div className="absolute bottom-4 right-4 bg-navy-800 text-white px-6 py-4 z-20">
+            <div className="absolute top-4 left-4 bg-navy-800 text-white px-6 py-4 z-20">
               <p className="font-heading text-crimson-400 text-xs uppercase tracking-widest">Our Foundation</p>
               <p className="font-heading text-2xl font-bold">Grit &amp; Grace</p>
               <p className="text-white/60 text-sm">in every step forward</p>
