@@ -30,15 +30,22 @@ export default function MissionSection() {
 
           {/* Text side */}
           <div>
-            <p className="section-subtitle mb-3">★ ★ ★ Our Mission ★ ★ ★</p>
-            <h2 className="section-title mb-6">Walking Alongside You Every Step</h2>
+            <p className="section-subtitle mb-3">★ ★ ★ Our Mission &amp; Vision ★ ★ ★</p>
+            <h2 className="section-title mb-6">Our Mission &amp; Vision: You.</h2>
             <div className="w-16 h-1 bg-crimson-500 mb-6" />
             <p className="text-gray-600 leading-relaxed mb-4">
-              Grit to Grace Mentorship LLC is a faith-rooted, veteran-owned mentorship organization committed to walking alongside individuals who feel stuck, lost, or unsure of their next step.
+              We&apos;re here to walk alongside those who feel stuck, lost, or without a way forward through personal, faith-rooted mentorship—helping you find purpose, build confidence, and move forward with faith. Through shared experience, compassion, accountability, and practical guidance, we help individuals face life&apos;s challenges with grit, regain confidence, and discover their God-given purpose.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-10">
-              Through shared experience, compassion, accountability, and practical guidance, we help youth, veterans, adults in recovery, and families build confidence, discover purpose, and move forward. We believe our past does not have to define our future.
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Inspired by 2 Timothy 4:7, our vision is to see people persevere through obstacles, keep the faith, and move forward with discipline, purpose, hope, and God&apos;s grace.
             </p>
+
+            <blockquote className="border-l-4 border-crimson-500 bg-crimson-500/5 px-5 py-4 mb-10">
+              <p className="font-script text-lg text-navy-700 leading-relaxed">
+                &ldquo;I have fought the good fight, I have finished the race, I have kept the faith.&rdquo;
+              </p>
+              <p className="text-crimson-500 text-xs uppercase tracking-widest font-heading mt-2">2 Timothy 4:7</p>
+            </blockquote>
 
             {/* Pillars */}
             <div className="grid grid-cols-2 gap-4">

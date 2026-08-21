@@ -36,7 +36,7 @@ export default function Footer() {
           <ul className="space-y-2.5">
             {[
               { to: '/', label: 'Home' },
-              { to: '/about', label: 'About Us' },
+              { to: '/about', label: 'Our Founder' },
               { to: '/services', label: 'Our Services' },
               { to: '/pricing', label: 'Pricing' },
               { to: '/testimonials', label: 'Impact & Community' },

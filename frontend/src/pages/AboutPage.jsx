@@ -1,15 +1,14 @@
 import Layout from '../components/layout/Layout';
 import { Link } from 'react-router-dom';
-import { Shield, Heart, Users, Star, Target, Anchor } from 'lucide-react';
+import { Award, Flame, HeartHandshake, BookOpen, Mountain } from 'lucide-react';
 import Reveal from '../components/common/Reveal';
 
 const values = [
-  { icon: Shield, title: 'Faith-Rooted', desc: 'Everything we do is grounded in faith, compassion, and the belief that every person has inherent worth and potential.' },
-  { icon: Anchor, title: 'Veteran-Owned', desc: 'Founded and led by a veteran who understands the challenges of transition, purpose-finding, and service to community.' },
-  { icon: Users, title: 'Community-Focused', desc: 'We believe in the power of community. Together, we are stronger and capable of achieving lasting change.' },
-  { icon: Target, title: 'Purpose-Driven', desc: 'We help each person discover and pursue their unique purpose — the reason they were put on this earth.' },
-  { icon: Heart, title: 'Compassion-Led', desc: 'Every interaction is guided by genuine care, empathy, and a deep desire to see each person thrive.' },
-  { icon: Star, title: 'Accountability-Based', desc: 'Real growth happens with structure and accountability. We walk alongside you and hold you to your potential.' },
+  { icon: Award, title: 'Honor', desc: 'We lead with integrity, honesty, and respect, modeling accountability in everything we do.' },
+  { icon: Flame, title: 'Courage', desc: "We face life's challenges head-on, encouraging others to overcome fear, embrace growth, and boldly pursue their purpose." },
+  { icon: HeartHandshake, title: 'Commitment', desc: 'We walk alongside those we serve through the struggles, the victories, and every step in between.' },
+  { icon: BookOpen, title: 'Faith', desc: "We are rooted in God's guidance, using Scripture and biblical principles to inspire hope, growth, and transformation." },
+  { icon: Mountain, title: 'Resilience', desc: "We believe obstacles don't have to define the outcome. Through perseverance, we help individuals develop the strength to keep moving forward." },
 ];
 
 export default function AboutPage() {
@@ -24,7 +23,7 @@ export default function AboutPage() {
         <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-crimson-500" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <p className="text-crimson-400 font-heading text-xs uppercase tracking-widest mb-3">Our Story</p>
-          <h1 className="font-heading text-white text-5xl md:text-6xl font-bold uppercase">About Us</h1>
+          <h1 className="font-heading text-white text-5xl md:text-6xl font-bold uppercase">Our Founder</h1>
           <div className="w-16 h-1 bg-crimson-500 mx-auto mt-4" />
         </div>
       </div>
@@ -33,13 +32,16 @@ export default function AboutPage() {
       <Reveal as="section" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="section-subtitle mb-3">Who We Are</p>
-            <h2 className="section-title mb-6">From Grit to Grace</h2>
+            <p className="section-subtitle mb-3">Our Founder</p>
+            <h2 className="section-title mb-6">David Arenas</h2>
             <div className="w-16 h-1 bg-crimson-500 mb-6" />
             <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p>Grit to Grace Mentorship LLC is a faith-rooted, veteran-owned mentorship organization committed to walking alongside individuals who feel stuck, lost, or unsure of their next step.</p>
-              <p>Through shared experience, compassion, accountability, and practical guidance, we help youth, veterans, adults in recovery, and families build confidence, discover purpose, and move forward.</p>
-              <p>We believe our past does not have to define our future — and that with grit, guidance, community, and God&apos;s grace, a new path is always possible.</p>
+              <p>I was born and raised in Houston, Texas, and graduated from Milby High School. Growing up, I faced generational cycles, adversity, and the expectation that I would simply become a product of my environment. Determined to create a different future for myself and my family, I joined the United States Marine Corps, where I served from 2009 to 2020.</p>
+              <p>But my journey didn&apos;t end when the uniform came off. Life after the military brought challenges of its own and ultimately led me to a deeper relationship with Jesus Christ, a renewed sense of purpose, and a calling to serve others.</p>
+              <p>I earned my Bachelor of Social Work from Angelo State University and am continuing my education there through the Master of Social Work program. My passion for serving others has also led me into youth ministry, recovery ministry, mentorship, and community outreach.</p>
+              <p>I know what it feels like to be stuck, to face hard seasons, and to need someone willing to walk beside you. That&apos;s why I founded Grit to Grace Mentorship.</p>
+              <p>Grit to Grace was born from lived experience, faith, and a simple belief: your past may be part of your story, but it does not have to define your future.</p>
+              <p className="font-script text-xl text-navy-700">Strengthened by <span className="text-crimson-500 font-semibold">Grit.</span> Led by <span className="text-crimson-500 font-semibold">Grace.</span></p>
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/services" className="btn-primary">Our Services</Link>
@@ -66,9 +68,9 @@ export default function AboutPage() {
             <h2 className="section-title">Our Core Values</h2>
             <div className="w-16 h-1 bg-crimson-500 mx-auto mt-4" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {values.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="card p-8 group">
+              <div key={title} className="card p-6 group">
                 <div className="bg-crimson-500/10 w-14 h-14 flex items-center justify-center mb-5 group-hover:bg-crimson-500 transition-colors duration-300">
                   <Icon size={24} className="text-crimson-500 group-hover:text-white transition-colors duration-300" />
                 </div>
